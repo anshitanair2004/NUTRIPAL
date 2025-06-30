@@ -1,0 +1,63 @@
+body {
+    font-family: TimesNewRoman, serif; /* Use Times New Roman as the primary font */
+    background: linear-gradient(to bottom, #a0d468, #304352); /* Emerald green gradient */
+    color: #fff; /* Easy to read white text */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px; /* Rounded corners for container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
+    padding: 30px;
+}
+
+h1, h2, p, button {
+    color: #fff; /* Maintain white text for all elements */
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#ingredients {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    width: 60%;
+    border-radius: 5px; /* Consistent rounded corners */
+    margin-right: 10px;
+}
+
+#generate-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #008000; /* Consistent green color */
+    color: #fff;
+    border: none;
+    border-radius: 10px; /* Rounded corners for buttons */
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#recipes-container {
+    margin-top: 20px;
+}
+
+#recipes {
+    font-size: 1.1em;
+    line-height: 1.5; /* Improves readability */
+    /* Text highlight effect (optional): */
+    text-shadow: 0 0 1px #000; /* Black outline for text within the container */
+}

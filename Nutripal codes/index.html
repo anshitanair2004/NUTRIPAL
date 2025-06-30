@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriPal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>NutriPal</h1>
+        <p>Find delicious recipes based on your ingredients (all text in Times Roman)!</p>
+        <div class="input-container">
+            <input type="text" id="ingredients" placeholder="Enter ingredients (e.g., eggs, milk, flour)">
+            <button id="generate-button" type="button">Generate Recipes</button>
+        </div>
+        <div id="recipes-container">
+            <h2>Recipes</h2>
+            <div id="recipes"></div>
+        </div>
+    </div>
+
+    <script>
+const ingredientsInput = document.getElementById('ingredients');
+const generateButton = document.getElementById('generate-button');
+const recipesDiv = document.getElementById('recipes');
+
+generateButton.addEventListener('click', async () => {
+  const ingredients = ingredientsInput.value.trim();
+  if (!ingredients) {
+    alert('Please enter some ingredients!');
+    return;
+  }
+
+  // Send a request to your server-side API (replace with your server's URL)
+  const response = await fetch('http://localhost:3000/recipes', {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    params: {
+      ingredients: ingredients
+    }
+  });
+
+  // ... rest of your code to handle the response (assuming parsing JSON)
+  const data = await response.json();
+  if (data.recipes) {
+    recipesDiv.textContent = data.recipes;
+  } else {
+    recipesDiv.textContent = 'An error occurred while fetching recipes.';
+  }
+});
+</script>
+</body>
+</html>
