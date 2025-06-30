@@ -7,7 +7,7 @@ NutriPal is a smart recipe suggestion tool that helps users discover healthy mea
 
 ## 💡 Project Overview
 
-his project uses rule-based logic to match user-provided ingredients with recipes from a predefined dataset. The goal is to reduce food waste and promote healthy eating habits using simple AI principles.
+This project uses rule-based logic to match user-provided ingredients with recipes from a predefined dataset. The goal is to reduce food waste and promote healthy eating habits using simple AI principles.
 In future versions, we aim to integrate NLP and convert NutriPal into a chatbot to allow users to interact with the system more naturally and efficiently.
 
 ## 🚀 Features
