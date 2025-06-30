@@ -32,7 +32,7 @@ In future versions, we aim to integrate NLP and convert NutriPal into a chatbot 
 
 
 
-#📌 *Note: Final demo output will be added soon.*
+##📌 *Note: Final demo output will be added soon.*
 
 
-#📌 **License:** Creative Commons BY-ND 4.0 — View-only. No reuse or modification allowed without permission.
+##📌 **License:** Creative Commons BY-ND 4.0 — View-only. No reuse or modification allowed without permission.
