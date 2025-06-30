@@ -15,15 +15,18 @@ In future versions, we aim to integrate NLP and convert NutriPal into a chatbot 
 - ✅ Ingredient-based recipe recommendations  
 - ✅ Diet filters (Vegan / High-Protein / Gluten-Free / None)  
 - ✅ Preloaded recipe dataset   
-- ✅ Command-line interface for quick input & results  
+
 - ✅ Lightweight, beginner-friendly implementation
 
 
 ## 🛠️ Tech Stack
 
 -Frontend: React (Next.js) with Tailwind CSS – for a clean, responsive UI
+
 -Backend: Node.js + Express – API handling & authentication using bcrypt and JWT
+
 -Database: MongoDB – hosted on MongoDB Atlas for scalable data storage
+
 -AI Integration: OpenAI Chat Completion API – powers the intelligent recipe chatbot
 
 
